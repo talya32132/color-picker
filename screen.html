@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style1.css">
+        <script defer src="first.js"></script>
+        <style> b {  font-size: 14px; font-family: sans-serif; } </style>
+        
+    </head>
+<body class="centeredFlex">
+    <div class="mainContainer">
+        <div class="centeredFlex" style="height: 100%;">
+            <div class="upperContainer"> 
+            <div class="leftContainer  centeredFlex">
+                <div class="stam"> 
+                <b>red:</b>
+                <b id="redValue">0</b>
+                <input type="range" min="0" max="255" value="0" class="slider" id="red" oninput="change()">
+                <b>225</b>
+                </div>
+                <div> 
+                    <b>green:</b>
+                    <b id="greenValue">0</b>
+                    <input type="range" min="0" max="255" value="0" class="slider" id="green" oninput="change()">
+                    <b>225</b>
+                </div>
+                <div>
+                <b>blue:</b>
+                <b id="blueValue">0</b>
+                <input type="range" min="0" max="255" value="0" class="slider" id="blue" oninput="change()">
+                <b>225</b>
+                </div>
+            </div>
+            <div class="rightContainer centeredFlex" >
+                <div class="innerConteiner" id="block"></div>
+            </div>
+        </div>
+            <div class="stringConteiner centerFlex">
+                <h1 id="text" >rgb(0,0,0)</h1>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
